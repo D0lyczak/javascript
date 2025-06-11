@@ -1,48 +1,58 @@
 <html> 
      <head> 
-            <title> Dorian Łyczak 2G2</title> 
+            <title> Dorian Łyczak 2G2</title>
+              <script type="text/javascript"> 
+                   function okno_zamknij_łyczak()  
+                    { 
+                    window.close() 
+                    } 
+               </script>
       </head> 
 <body> 
 <h3>1)kiedy powstał JavaScript (podaj datę). </h3>
-…………………………..tutaj odpowiedź………………………………………….. 
+4 grudnia 1995 roku
  
 <h3>2)dlaczego jest to język skryptowy </h3>
-…………………………..tutaj odpowiedź………………………………………….. 
- 
+jest interpretowany w przeglądarce internetowej, a nie wymaga kompilacji przed uruchomieniem.
 <h3>3)gdzie jest wykonywany JS   (klient lub serwer) </h3>
-…………………………..tutaj odpowiedź………………………………………….. 
+głównie działa po stronie klienta
  
 <h3>4)dlaczego jest JS to bezpieczne narzędzie </h3>
  
-…………………………..tutaj odpowiedź………………………………………….. 
+ ma ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszystkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.
+
 <h3>5)czy jest to język obiektowy , jeśli tak to dlaczego. </h3>
-…………………………..tutaj odpowiedź………………………………………….. 
+Javascript jest językiem programowania obiektowego ponieważ wykorzystuje definicje obiektów, metod, zdarzeń, które mogą być zastosowane do opisu właściwości obiektów.
 <h3>6)wymień zalety  JS: </h3>
-Zaleta1 …………………………..tutaj odpowiedź………………………………………….. 
-Zaleta2 …………………………..tutaj odpowiedź………………………………………….. 
-Zaleta3 …………………………..tutaj odpowiedź………………………………………….. 
+Zaleta1 Wielostronność:
+JavaScript umożliwia tworzenie dynamicznych stron internetowych, aplikacji mobilnych (za pomocą frameworków jak React Native), desktopowych (za pomocą Electron), a nawet aplikacji serwerowych. <br>
+Zaleta2Łatwość nauki:
+JavaScript jest uważany za język wysokiego poziomu, co oznacza, że jest stosunkowo prosty do zrozumienia i rozpoczęcia pracy.<br> 
+Zaleta3 popularność:
+Wielu programistów zna i korzysta z JavaScriptu, co oznacza, że dostęp do pomocy, zasobów edukacyjnych i gotowych rozwiązań jest bardzo duży. <br> 
 <h3>7)Framework to: </h3>
-…………………………..tutaj odpowiedź………………………………………….. 
+Framework to narzędzie lub struktura programistyczna, która zapewnia gotowe rozwiązania i narzędzia do tworzenia aplikacji lub oprogramowania.
 <h3>8)Do aplikacji mobilnych można użyć Framework </h3>
-…………………………..tutaj odpowiedź…………………………………………..  
+tak
 <h3>9)Aplikacje responsywne to: </h3>
-…………………………..tutaj odpowiedź………………………………………….. 
+Aplikacje responsywne to aplikacje lub strony internetowe, które dostosowują się do różnych rozmiarów ekranów i urządzeń. 
 <h3>10)Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu </h3>
 <textarea cols="1" rows="1"><input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"> </textarea>
-……………………………wytłumaczenie  jak działa linia kodu………………. 
+Dany fragment kodu jest przyciskiem ktory jak sie kliknie wywoluje funkcje "WinOpen(' ')".
 <h3>11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu </h3>
 <textarea cols="1" rows="1">window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</textarea>
-……………………………wytłumaczenie  jak działa linia kodu………………. 
+window.open(): Jest to wbudowana funkcja przeglądarki, która służy do otwierania nowego okna przeglądarki lub nowej karty. <br>
 
- toolbar=no  wytlumaczenie: <br>
-directories=no,  wytlumaczenie: <br>
-menubar=no,   wytlumaczenie: <br>
-height=280,   wytlumaczenie: <br>
-width=160,   wytlumaczenie: <br>
-top=200,   wytlumaczenie: <br>
-left=200  wytlumaczenie: <br>
+ toolbar=no  wytlumaczenie: wartość yes lub no (1 lub 0): pokazuje lub ukrywa standardowy pasek narzędzi <br>
+directories=no,  wytlumaczenie: Directories - wartość yes lub no (1 lub 0): pokazuje lub ukrywa przyciski katalogów <br>
+menubar=no,   wytlumaczenie: wartość yes lub no (1 lub 0): pokazuje lub ukrywa menu przeglądarki<br>
+height=280,   wytlumaczenie: wartosc w pikselach:        ustawia wysokość okna <br>
+width=160,   wytlumaczenie: wartosc w pikselach:         ustawia szerokość okna <br>
+top=200,   wytlumaczenie: wartosc w pikselach:           ustawia położenie okna względem góry ekranu <br>
+left=200  wytlumaczenie: wartosc w pikselach:            ustawia położenie okna względem lewej strony ekranu  <br>
 
 <h3>12)Opisz następującą instrukcję window.close() </h3>
-……………………………wytłumaczenie……………………………………………………………………………….
+window.close(): Jest to wbudowana funkcja przeglądarki, która służy do zamykania danego okna przeglądarki.<br><br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_łyczak()"/> 
 </body> 
 </html> 
