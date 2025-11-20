@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>Obliczenia – Łyczak</h1>
+<script type="text/javascript">
+function wczytaj_Lyczak() {
+    var x1_Lyczak = parseFloat(document.getElementById('x1_dana_Lyczak').value);
+    var x2_Lyczak = parseFloat(document.getElementById('x2_dana_Lyczak').value);
+    return {x1_Lyczak, x2_Lyczak};
+}
+function radiany_Lyczak(x1_Lyczak) {
+    return x1_Lyczak * Math.PI / 180;
+}
+function y1_Lyczak(x1_Lyczak) {
+    return 3 * Math.pow(x1_Lyczak, 6/8);
+}
+function y2_Lyczak(x1_rad_Lyczak) {
+    return 2 * Math.cos(x1_rad_Lyczak) + 3 * Math.sin(x1_rad_Lyczak);
+}
+function y3_Lyczak(x1_Lyczak, x2_Lyczak) {
+    return Math.cbrt(Math.pow(x1_Lyczak,5) + 2 * Math.pow(x2_Lyczak,4) * Math.abs(x1_Lyczak - x2_Lyczak));
+}
+function oblicz_Lyczak() {
+    var dane = wczytaj_Lyczak();
+    var x1 = dane.x1_Lyczak;
+    var x2 = dane.x2_Lyczak;
+    var x1_rad = radiany_Lyczak(x1);
+    var y1 = y1_Lyczak(x1);
+    var y2 = y2_Lyczak(x1_rad);
+    var y3 = y3_Lyczak(x1, x2);
+    document.getElementById('x1_wynik_Lyczak').value = x1;
+    document.getElementById('x1_rad_wynik_Lyczak').value = x1_rad.toFixed(2);
+    document.getElementById('y1_wynik_Lyczak').value = y1.toFixed(2);
+    document.getElementById('y2_wynik_Lyczak').value = y2.toFixed(2);
+    document.getElementById('y3_wynik_Lyczak').value = y3.toFixed(2);
+}
+</script>
+<p>Wprowadź dane:</p>
+X1: <input type="text" id="x1_dana_Lyczak" size="5"><br><br>
+X2: <input type="text" id="x2_dana_Lyczak" size="5"><br><br>
+<input type="button" value="Oblicz" onclick="oblicz_Lyczak()"><br><br>
+X1: <input type="text" id="x1_wynik_Lyczak" size="10"><br><br>
+X1 w radianach: <input type="text" id="x1_rad_wynik_Lyczak" size="10"><br><br>
+y1: <input type="text" id="y1_wynik_Lyczak" size="10"><br><br>
+y2: <input type="text" id="y2_wynik_Lyczak" size="10"><br><br>
+y3: <input type="text" id="y3_wynik_Lyczak" size="10"><br><br>
+</body>
+</html>
