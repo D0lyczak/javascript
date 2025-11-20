@@ -2,8 +2,36 @@
 <html>
  <body>
  <textarea cols="90" rows="24">
+
 <html>
 <head>
+<title>
+Drabina i kąt, zadanie 23
+</title>
+<script language="JavaScript">
+function Drabina(d,x)
+{
+c=parseFloat(d)
+d=parseFloat(x)
+Drabina_w=Math.sqrt((c*c)+(d*d))
+document.getElementsByName('drab')[0].value=Drabina_w.toFixed(2);
+alert("Drabina="+Drabina_w.toFixed(2)+" cm");
+pokaz1.innerHTML="Drabina="+Drabina_w.toFixed(2)+" cm"+"<br>";
+}
+function Alfa(d,x)
+{
+c=parseFloat(d)
+d=parseFloat(x)
+var sinA = c/(Math.sqrt((c*c)+(d*d)));
+var aRad = Math.asin(sinA);
+var aDeg = aRad * (180 / Math.PI);
+Alfa_w=aDeg;
+document.getElementsByName('alfa')[0].value=Alfa_w.toFixed(2);
+alert("Alfa="+Alfa_w.toFixed(2));
+ pokaz2.innerHTML="Alfa="+Alfa_w.toFixed(2)+"<br>";
+}
+</script>
+</head>
 </head>
 <body>
 <br>
@@ -43,6 +71,7 @@ Alfa:
 <br>
 </body>
 </html>
+
  </textarea>
  </body>
 </html>
