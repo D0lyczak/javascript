@@ -1,0 +1,37 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    function owoc (kolor, owoc, smak, ilosc) { // początek konstruktora
+        this.kolor=kolor;
+        this.owoc=owoc;
+        this.smak=smak;
+        this.ilosc=ilosc;
+    } // koniec konstruktora
+
+    owoc.prototype.wypisz = function () { // definicja metody
+        alert(this.kolor + ' ' + this.owoc + ' ' + this.smak + ' ' + this.ilosc);
+    };
+
+    var owoc1 = new owoc("czerwony", "jabłko", "słodki", "1"); // nowy obiekt owoc1
+    var owoc2 = new owoc('żółty', 'cytryna', 'kwaśny', "2");
+    var owoc3 = new owoc('brązowy', 'kakao', 'gorzki', "3");
+
+    
+    document.write("dostęp do właściwości"+"<br>");
+    // poniżej dostęp do pól owoc1
+    document.write("owoc pierwszy" + " " + owoc1.kolor + " " + owoc1.owoc + " " + owoc1.smak + " " + owoc1.ilosc + "<br>");
+    document.write("owoc drugi" + " " + owoc2.kolor + " " + owoc2.owoc + " " + owoc2.smak + " " + owoc2.ilosc + "<br>");
+    document.write("owoc trzeci" + " " + owoc3.kolor + " " + owoc3.owoc + " " + owoc3.smak + " " + owoc3.ilosc + "<br>");
+    
+    owoc1.wypisz(); // uruchomienie metody wypisz() dotyczącej owoc 1
+    owoc2.wypisz();
+    owoc3.wypisz();
+    </script>
+</head>
+<body>
+    <br>
+    programowanie obiektowe
+</body>
+</html>
+
