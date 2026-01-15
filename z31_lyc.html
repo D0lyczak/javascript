@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var owoc = {
+            kolor: 'czerwony',
+            owoc: 'jabłko',
+            smak: 'Słodki',
+            owoc_wyswietl_Lyczak: function (){
+                document.write("owoc: " + this.owoc + "<br>" + ": " + this.smak + "<br>" + "kolor: " + this.kolor)}
+            }
+        }
+        owoc.owoc_pokaz_kowalewski();
+        owoc.ilosc=3;
+        owoc.wypisz=function() {
+            alert('jest: ' + this.ilosc + ' owoców');
+        }
+        owoc.wypisz();   
+    </script>
+</head>
+<body>
+    <br>
+   Programowanie obiektowe. <br>
+    Obiekt to owoc<br>
+    Pola:<br>
+    kolor<br>
+    owoc<br>
+    smak<br>
+    metoda: owoc_wyswietl_Lyczak<br>
+    nowe pole to ilosc <br>
+    nowa metoda to wypisz();<br>
+</body>
+</html>
